@@ -1,0 +1,8 @@
+{
+  "name": "Prime Zone Fitness",
+  "description": "Cinematic 3D Animated Gym Website",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

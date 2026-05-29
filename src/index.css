@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-prime-neon: #e59e00;
+  --color-prime-secondary: #f5bf00;
+  --color-prime-dark: #050505;
+  --color-prime-charcoal: #141414;
+  --color-prime-gray: #1a1a1a;
+  --color-prime-silver: #c0c0c0;
+
+  --font-bebas: "Anton", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  background-color: var(--color-prime-dark);
+  color: white;
+  font-family: var(--font-inter);
+  overflow-x: clip;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-bebas);
+  letter-spacing: -0.02em; /* Tighter tracking for Anton like the reference */
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+
+.glass-card {
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bg-prime-neon {
+  background-color: var(--color-prime-neon);
+  box-shadow: 0 0 20px rgba(229, 158, 0, 0.4);
+}
+
+.text-prime-neon {
+  color: var(--color-prime-neon);
+  text-shadow: 0 0 15px rgba(229, 158, 0, 0.5);
+}
+
+.metallic-gradient {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333 50%, #1a1a1a 100%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
