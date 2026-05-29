@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Menu, X, Dumbbell } from "lucide-react";
 import { useState, useEffect } from "react";
+import LogoImg from "../../assets/images/logo.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,7 @@ export default function Navbar() {
           className="flex flex-col items-start gap-2 text-2xl font-bebas text-white"
         >
           <img
-            src="../../assets/images/logo.png"
+            src={LogoImg}
             alt="Gym Environment"
             className="object-cover w-1/8 h-1/8"
           />

@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Shield, Target, Zap, Activity } from "lucide-react";
+import InstructorLogo from "../../assets/images/instructir.jpg";
 
 export default function About() {
   const features = [
@@ -85,7 +86,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-prime-dark to-transparent z-10 opacity-60"></div>
               {/* Fallback image if 3D/real image is missing, we use a beautiful dark abstract aesthetic from unsplash */}
               <img
-                src="../../assets/images/instructir.jpg"
+                src={InstructorLogo}
                 alt="Gym Environment"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />

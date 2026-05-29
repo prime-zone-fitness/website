@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useProgress } from "@react-three/drei";
+import LogoImg from "../../assets/images/logo.png";
 
 export default function LoadingScreen() {
   const { progress } = useProgress();
@@ -60,7 +61,7 @@ export default function LoadingScreen() {
               transition={{ duration: 1.5, ease: "easeOut" }}
               className="flex flex-col justify-center items-center"
             >
-              <img src="../../assets/images/logo.png" alt="logo" className="object-contain w-3/4 h-3/4" />    
+              <img src={LogoImg} alt="logo" className="object-contain w-3/4 h-3/4" />    
             </motion.div>
 
             <motion.p

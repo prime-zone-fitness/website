@@ -1,13 +1,13 @@
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import React, { useRef } from "react";
 import { Instagram, Twitter } from "lucide-react";
+import InstructorLogo from "../../assets/images/instructir.jpg";
 
 const trainers = [
   {
     name: "USMAN",
     role: "HEAD OF STRENGTH",
-    image:
-      "../../assets/images/instructir.jpg",
+    image: InstructorLogo,
     bio: "",
     link:"https://www.instagram.com/usman_fitness_5268/"
   },

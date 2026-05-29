@@ -7,6 +7,7 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
+import LogoImg from "../../assets/images/logo.png";
 
 export default function Footer() {
   return (
@@ -21,8 +22,11 @@ export default function Footer() {
               href="#home"
               className="flex items-center gap-2 text-3xl font-bebas text-white mb-6"
             >
-              <Dumbbell className="text-prime-neon" size={36} />
-              PRIME <span className="text-prime-neon">ZONE</span>
+              <img
+                src={LogoImg}
+                alt="Gym Environment"
+                className="object-cover w-1/8 h-1/8"
+              />
             </a>
             <p className="text-gray-400 font-light max-w-sm mb-8">
               The premier athletic performance facility. We combine cutting-edge
