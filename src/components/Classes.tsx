@@ -84,14 +84,15 @@ export default function Classes() {
 
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 <div className="translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                  <div className="w-12 h-12 bg-prime-neon text-white flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(229,158,0,0.4)]">
-                    {cls.icon}
+                  <div className="flex flex-row items-center gap-2 mb-6">
+                    <div className="w-12 h-12 bg-prime-neon text-white flex items-center justify-center shadow-[0_0_15px_rgba(229,158,0,0.4)]">
+                      {cls.icon}
+                    </div>
+
+                    <h3 className="text-2xl font-bebas tracking-wide leading-none uppercase">
+                      {cls.title}
+                    </h3>
                   </div>
-
-                  <h3 className="text-3xl font-bebas tracking-wide mb-2 leading-none uppercase">
-                    {cls.title}
-                  </h3>
-
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 flex flex-col gap-2 mb-6">
                     <div className="flex justify-between text-xs font-bold tracking-widest border-b border-white/10 pb-2 uppercase">
                       <span className="text-gray-400">Burn</span>
@@ -100,14 +101,21 @@ export default function Classes() {
                     <div className="flex justify-between text-xs font-bold tracking-widest border-b border-white/10 pb-2 uppercase">
                       <span className="text-gray-400">Duration</span>
                       <span className="text-white">{cls.time}</span>
-                    </div>
-                    <div className="flex justify-between text-xs font-bold tracking-widest pb-2 uppercase">
-                      <span className="text-gray-400">Lead Trainer</span>
-                      <span className="text-white">{cls.trainer}</span>
-                    </div>
+                    </div> 
                   </div>
 
-                  <button className="w-full py-4 glass-card border border-white/10 hover:bg-prime-neon hover:border-prime-neon rounded-none font-bebas tracking-widest text-lg transition-colors duration-300 uppercase">
+                  <button
+                    onClick={() =>
+                      window.open(
+                        `https://wa.me/7386562313?text=${encodeURIComponent(
+                          `Hi Primezone Fitness, I'm interested in the ${cls.title} plan at ${cls.burn}/${cls.time}.`
+                        )}`,
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
+                    className="w-full py-4 glass-card border border-white/10 hover:bg-prime-neon hover:border-prime-neon rounded-none font-bebas tracking-widest text-lg transition-colors duration-300 uppercase mb-4"
+                  >
                     BOOK SESSION
                   </button>
                 </div>

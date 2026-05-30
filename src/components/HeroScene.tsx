@@ -143,13 +143,15 @@ export default function HeroScene() {
         <Dumbbell position={[0, 0, 0]} scale={1.2} rotation={[0.5, 0.5, 0]} />
         <Dumbbell position={[-4, 2, -3]} scale={0.8} rotation={[-0.5, 1, 0.2]} />
         <Dumbbell position={[4, -2, -2]} scale={0.7} rotation={[1, -0.4, 0.5]} />
+        <Dumbbell position={[4, 3, 0]} scale={0.6} rotation={[0.5, 0.5, 0]} />
         
         <WeightPlate position={[-3, -2, -1]} scale={0.6} rotation={[0.2, 1.5, 0.5]} />
         <WeightPlate position={[3, 2, -4]} scale={0.8} rotation={[0.5, 0.8, 0.2]} />
-
+        <WeightPlate position={[5, 1, -2]} scale={0.7} rotation={[0.3, 0.8, 0.2]} />
+ 
         <Kettlebell position={[-1.5, -2.5, 1]} scale={0.5} rotation={[0.2, -0.5, 0]} />
-        <Kettlebell position={[2.5, 1.5, -1]} scale={0.4} rotation={[-0.3, 0.8, -0.2]} />
-
+        <Kettlebell position={[5.3, -0.4, -1]} scale={0.4} rotation={[-0.3, 0.8, -0.2]} />
+ 
         <Sparkles
           count={250}
           scale={15}

@@ -68,9 +68,9 @@ export default function LoadingScreen() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6, duration: 1 }}
-              className="text-gray-500 tracking-[0.5em] text-xs md:text-sm uppercase font-bold"
-            >
-              Premium Fitness
+              className="text-gray-500 tracking-[0.5em] text-xs md:text-sm uppercase font-bold text-center"
+            >PRIMEZONE <br />
+              PREMIUM FITNESS
             </motion.p> 
           </div>
 

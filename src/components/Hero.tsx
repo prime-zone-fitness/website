@@ -3,9 +3,9 @@ import HeroScene from "./HeroScene";
 
 export default function Hero() {
   const stats = [
-    { value: "4.8", label: "121 Reviews" },
-    { value: "50K+", label: "Active Members" },
-    { value: "10+", label: "Expert Trainers" },
+    { value: "4.8", label: "100+ Reviews" },
+    { value: "100+", label: "Active Clients" },
+    { value: "3+", label: "Expert Trainers" },
   ];
 
   return (
@@ -26,14 +26,14 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="flex flex-col items-start gap-6"
         >
-          <div className="flex items-center gap-3 mb-4">
+          {/* <div className="flex items-center gap-3 mb-4">
             <div className="h-[1px] w-12 bg-prime-neon"></div>
             <span className="text-prime-neon text-xs font-bold tracking-[0.4em] uppercase">
               BEYOND LIMITS
             </span>
-          </div>
+          </div> */}
 
-          <h1 className="text-7xl lg:text-[140px] font-bebas leading-[0.9] text-white select-none whitespace-nowrap">
+          <h1 className="text-7xl lg:text-[140px] font-bebas leading-[0.9] text-white select-none whitespace-nowrap mt-4">
             <span
               className="font-bold text-transparent bg-clip-text tracking-[0.01em]"
               style={{

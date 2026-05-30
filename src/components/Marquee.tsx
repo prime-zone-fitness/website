@@ -2,6 +2,7 @@ export default function Marquee() {
   const items = [
     "CALL US NOW",
     "MEMBERSHIP PRICING STARTS RS.999/- ONLY",
+    "PER SESSION 199/- ONLY",
     "JOIN NOW",
     "500+ SATISFIED CLIENTS",
     "24/7 CUSTOMER SUPPORT",

@@ -56,7 +56,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="text-5xl sm:text-7xl font-bebas mb-4"
           >
-            CHOOSE YOUR <span className="text-prime-neon">ARSENAL.</span>
+            CHOOSE YOUR <span className="text-prime-neon">PLAN.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}

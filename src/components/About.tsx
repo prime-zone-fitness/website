@@ -6,8 +6,8 @@ export default function About() {
   const features = [
     {
       icon: <Shield className="w-8 h-8 text-prime-neon" />,
-      title: "Online & On-Site",
-      desc: "Flexible options including online classes, outdoor services, and on-site training sessions.",
+      title: "Safety & Security",
+      desc: "Your well-being is our priority, with secure facilities and a safe workout environment.",
     },
     {
       icon: <Target className="w-8 h-8 text-prime-neon" />,
@@ -59,17 +59,19 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1, duration: 0.5 }}
-                  className="flex flex-col gap-3"
+                  className="flex flex-row gap-3 items-center"
                 >
                   <div className="p-3 bg-white/5 rounded-none w-fit border border-white/10 shadow-[0_0_15px_rgba(229,158,0,0.1)]">
                     {feature.icon}
                   </div>
-                  <h3 className="text-xl font-bebas tracking-wide uppercase">
-                    {feature.title}
-                  </h3>
-                  <p className="text-sm text-gray-500 font-medium">
-                    {feature.desc}
-                  </p>
+                  <div className="flex flex-col items-start">
+                    <h3 className="text-xl font-bebas tracking-wide uppercase">
+                      {feature.title}
+                    </h3>
+                    <p className="text-xs text-gray-500 font-medium">
+                      {feature.desc}
+                    </p>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -93,7 +95,7 @@ export default function About() {
 
               <div className="absolute bottom-8 left-8 z-20 glass-card p-6 rounded-none max-w-[200px] border border-white/10">
                 <span className="block text-4xl font-bebas text-prime-neon mb-1 leading-none">
-                  10+
+                  5+
                 </span>
                 <span className="text-[10px] uppercase tracking-widest text-gray-400 font-bold">
                   Years of sculpting champions
